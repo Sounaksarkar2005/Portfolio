@@ -419,6 +419,36 @@ section {
     align-items: center;
     gap: 30px;
 }
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.contact-socials {
+    display: flex;
+    gap: 20px;
+}
+.social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    color: var(--text-main);
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.social-icon:hover {
+    color: var(--neon-green);
+    border-color: var(--neon-green);
+    box-shadow: var(--neon-shadow);
+    transform: translateY(-5px) scale(1.1);
+}
 footer {
     text-align: center;
     padding: 30px;
