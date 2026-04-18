@@ -154,7 +154,7 @@ let updateThreeTheme;
 const canvas = document.querySelector('#bg-canvas');
 if (canvas) {
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x030a04, 0.0015);
+    scene.fog = new THREE.FogExp2(0x03080a, 0.0015);
 
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({
@@ -174,7 +174,7 @@ if (canvas) {
     ];
 
     const material = new THREE.MeshBasicMaterial({ 
-        color: 0x39ff14, 
+        color: 0x00f3ff, 
         wireframe: true,
         transparent: true,
         opacity: 0.15
@@ -204,11 +204,11 @@ if (canvas) {
     // Dynamic Theme Update for Three.js
     updateThreeTheme = (isLight) => {
         if (isLight) {
-            material.color.setHex(0x008800);
-            scene.fog.color.setHex(0xf0f7f4);
+            material.color.setHex(0x0088ff);
+            scene.fog.color.setHex(0xf0f4f7);
         } else {
-            material.color.setHex(0x39ff14);
-            scene.fog.color.setHex(0x030a04);
+            material.color.setHex(0x00f3ff);
+            scene.fog.color.setHex(0x03080a);
         }
     };
 
